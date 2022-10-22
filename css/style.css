@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Helvetica, sans-serif;
+  list-style: none;
+}
+/* root */
+:root {
+  --Main-color: #04b4e0;
+  --text-color: #aaa;
+  --transition: 0.5s;
+  --box-shadow:  7px 9px 20px rgba(0 0 0 / 35%);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.mainContainer {
+  width: 100%;
+  
+  /* background-color: black; */
+}
+.mainContainer header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.mainContainer header .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.mainContainer header .background img {
+  width: 100%;
+  height: 100%;
+}
+.mainContainer header .child {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer header .child nav {
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mainContainer header .child nav img{
+  width: 8vw;
+  height: 8vh;
+}
+.mainContainer header .child nav ul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+
+ text-transform: uppercase;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 21px;
+}
+.mainContainer header .child .content {
+  width: 50vw;
+  height: 20vh;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer header .child .content h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.mainContainer header .child .content p {
+  font-size: 25px;
+  color: white;
+}
+.mainContainer header .child .scroll {
+  width: 50px;
+  height: 50px;
+  /* background-color: darkmagenta; */
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer header .child .scroll i{
+  color: #fff;
+  font-size: 2rem;
+}
+/* about */
+.mainContainer .about {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #04b4e0; */
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .about h2 {
+  font-size: 5.75rem;
+  opacity: .2;
+  padding: 8vw;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.mainContainer .about .about-content {
+  width: 90%;
+  height: 80%;
+  /* background-color: black; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.mainContainer .about .about-content .left {
+  width: 40%;
+  height: 100%;
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .about .about-content .left .imagebox {
+  width: 90%;
+  height: 70%;
+  border: 8px solid #333;
+  border-radius: 10px;
+}
+.mainContainer .about .about-content .left .imagebox img {
+  width: 100%;
+  height: 100%;
+  transform: translate(-25px, -25px);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.mainContainer .about .about-content .right {
+  width: 60%;
+  height: fit-content;
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+.mainContainer .about .about-content .right h3 {
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;
+  color: var(--Main-color);
+}
+.mainContainer .about .about-content .right h3::first-letter {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.mainContainer .about .about-content .right p {
+  width: 100%;
+  padding: 3vw;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: #333;
+  font-weight: bold;
+}
+.mainContainer .about .about-content .right .info {
+  width: 100%;
+  height: 9vh;
+  /* background-color: #04b4e0; */
+  display: flex;
+}
+.mainContainer .about .about-content .right .info .icon {
+  width: 75%;
+  height: 100%;
+  /* background-color: brown; */
+}
+.mainContainer .about .about-content .right .info .icon ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.mainContainer .about .about-content .right .info .icon ul li {
+  width: 49%;
+  height: 49%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+.mainContainer .about .about-content .right .info .icon ul li i {
+  color: var(--Main-color);
+  font-size: 1.5rem;
+  padding-right: 25px;
+}
+.mainContainer .about .about-content .right button {
+  outline: none;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  background-color: #04b4e0;
+  color: #fff;
+  padding: 2vw;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* services */
+.mainContainer .Services {
+  width: 100%;
+  height: 110vh;
+  /* background-color: #04b4e0; */
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .Services h2 {
+  font-size: 5.75rem;
+  opacity: .2;
+  padding: 8vw;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+
+#SkillBox {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  border-radius: 20px;
+ box-shadow: var(--box-shadow);
+
+}
+
+.SkillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.3);
+  margin: 20px auto;
+}
+#Skill-HTML {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+#Skill-CSS {
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+#Skill-jQuery {
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+#Skill-JS {
+  width: 75%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+
+
+#Skill-JAVA {
+  animation: Animate-JAVA 4s;
+
+  width: 88%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+#Skill-PHP {
+  animation: Animate-PHP 4s;
+
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+#Skill-responsive {
+  animation: Animate-PHP 4s;
+
+  width: 95%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+#Skill-psd {
+  animation: Animate-PHP 4s;
+
+  width:85%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--Main-color);
+}
+
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+
+  font-size: 18px;
+}
+.PercentText {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
+}
+/* PORTFOLIO */
+.mainContainer .PORTFOLIO {
+  width: 100%;
+  height: 110vh;
+  /* background-color: #04b4e0; */
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .PORTFOLIO h2 {
+  font-size: 5.75rem;
+  opacity: .2;
+  padding: 8vw;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.mainContainer .PORTFOLIO .Boxcont{
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainContainer .PORTFOLIO .Boxcont div{
+  width: 33%;
+  height: 49%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  /* box-shadow: var(--box-shadow); */
+  position: relative;
+}
+.mainContainer .PORTFOLIO .Boxcont div .imagebox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+.mainContainer .PORTFOLIO .Boxcont div .imagebox img{
+  width: 100%;
+  height: 100%;
+}
+.mainContainer .PORTFOLIO .Boxcont div .linkbox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color:rgba(0 0 0 / 55%);
+  transform: rotateX(90deg);
+  transition: .8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .PORTFOLIO .Boxcont div .linkbox i{
+  font-size: 30px;
+  color: #fff;
+}
+.mainContainer .PORTFOLIO .Boxcont div:hover .linkbox{
+  transform: rotateX(0deg);
+
+}
+/* PORTFOLIO */
+/* footer */
+.mainContainer footer{
+  width: 100%;
+  height:15vh;
+  background-color: var(--Main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2vh;
+}
+.mainContainer footer h2{
+  color: #fff;
+  font-size: 2rem;
+}
+.mainContainer footer hr{
+  width: 70%;
+  background-color: #cdcdcd;
+}
+.mainContainer footer .icons{
+  width: 15%;
+  height: 40%;
+ 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.mainContainer footer .icons i{
+  font-size: 2rem;
+  color: #fff;
+}
+/* footer */

@@ -1,0 +1,38 @@
+@media screen and (max-width:576px)  {
+    .mainContainer header .child .content h1 {
+        font-size: 30px;
+      }
+      .mainContainer .about h2 {
+        font-size: 2.75rem;
+      }
+      .mainContainer .about .about-content .right h3 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        color: var(--Main-color);
+      }
+      .mainContainer .about .about-content .right p {
+        width: 100%;
+        padding: 2vw;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        font-weight: bold;
+      }
+      .mainContainer .about .about-content .right .info .icon ul li {
+    
+        font-size: 11px;
+      }
+      .mainContainer .about .about-content .right .info .icon ul li i{
+        font-size: 18px;
+        padding-left: 1vw;
+      }
+      .mainContainer .Services h2 {
+        font-size: 3rem;
+     
+      }
+      .mainContainer .PORTFOLIO {
+        width: 100%;
+      margin-top: 2vh;
+      }
+}
