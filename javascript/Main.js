@@ -11,7 +11,7 @@ let Contact = document.querySelector("#Contact");
 
   window.onscroll = function () {
     if (window.scrollY >= 50) {
-      navbar.style.background = "#000";
+      navbar.style.background = "#fff";
      
     } else if (window.scrollY >= 0) {
       navbar.style.background = "transparent";
